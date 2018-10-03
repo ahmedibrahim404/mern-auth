@@ -1,0 +1,52 @@
+section.auth-panel {
+  transition: all 100ms ease-in-out;
+  padding: 25px 0;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  transition: all 5s ease-in-out;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+section.auth-panel header {
+  text-align: center;
+}
+section.auth-panel header h1, section.auth-panel header p {
+  color: #9a9a9a;
+  opacity: 0.8;
+}
+section.auth-panel header h1 {
+  color: #1d1d1d;
+}
+section.auth-panel .tabs {
+  margin-top: 15px;
+  text-align: center;
+}
+section.auth-panel .tabs .tab {
+  background: #9a9a9a;
+  padding: 8px;
+  transition: all 200ms ease-in-out;
+  color: #FFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  section.auth-panel .tabs .tab {
+    width: calc(100%/3);
+    font-size: 13px;
+  }
+}
+@media (max-width: 509px) {
+  section.auth-panel .tabs .tab {
+    width: calc(100%/4);
+    font-size: 11px;
+  }
+}
+section.auth-panel .tabs .tab[show="1"] {
+  background: #24ccf0;
+}
+section.auth-panel .tabs .tab:hover {
+  background: #24ccf0;
+}
+section.auth-panel .tabs .tab:last-of-type {
+  flex: 1.5;
+}
